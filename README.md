@@ -1,4 +1,4 @@
-# 安可IPA键盘（Anke IPA Keyboard）说明（2023.4）
+# 安可IPA键盘（Anke IPA Keyboard）
 
 ## 总述
 
@@ -33,7 +33,7 @@
     </tr>
   </table>
   
-- 运行MSKLC生成的安装程序“setup.exe”安装后，从输入法列表中选择“Anke IPA Keyboard”就可以使用了。
+- 压缩包“ankeipa.zip”内为MSKLC生成的安装程序。解压并运行“setup.exe”安装后，从输入法列表中选择“Anke IPA Keyboard”就可以使用了。
 
 ## IPA字母
 
@@ -56,7 +56,7 @@
       <th align="left">颤音</td><td></td><td>br<br>ʙ</td><td colspan="2"></td><td colspan="2"></td><td></td><td><br>r</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2">-</td><td></td><td>rq<br>ʀ</td><td colspan="2"></td><td colspan="2">-</td>
     </tr>
     <tr align="center">
-      <th align="left">拍&zwj;音&zwj;或&zwj;闪&zwj;音</td><td colspan="2"></td><td></td><td>vb<br>ⱱ</td><td colspan="2"></td><td></td><td>rd<br>ɾ</td><td colspan="2"></td><td></td><td>rD<br>ɽ</td><td colspan="2"></td><td colspan="2">-</td><td colspan="2"></td><td colspan="2"></td><td colspan="2">-</td>
+      <th align="left">拍音或闪音</td><td colspan="2"></td><td></td><td>vb<br>ⱱ</td><td colspan="2"></td><td></td><td>rd<br>ɾ</td><td colspan="2"></td><td></td><td>rD<br>ɽ</td><td colspan="2"></td><td colspan="2">-</td><td colspan="2"></td><td colspan="2"></td><td colspan="2">-</td>
     </tr>
     <tr align="center">
       <th align="left">擦音</td><td>ph<br>ɸ</td><td>bh<br>β</td><td><br>f</td><td><br>v</td><td>th<br>θ</td><td>dh<br>ð</td><td><br>s</td><td><br>z</td><td>ss<br>ʃ</td><td>zz<br>ʒ</td><td>sr<br>ʂ</td><td>zr<br>ʐ</td><td>ch<br>ç</td><td>jh<br>ʝ</td><td><br>x</td><td>gh<br>ɣ</td><td>xq<br>χ</td><td>rh<br>ʁ</td><td>h/<br>ħ</td><td>/h<br>ʕ</td><td><br>h</td><td>hh<br>ɦ</td>

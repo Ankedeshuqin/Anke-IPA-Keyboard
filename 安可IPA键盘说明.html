@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <title>安可IPA键盘（Anke IPA Keyboard）说明</title>
+    <style>
+        html, body {font-family: sans-serif; background-color: honeydew}
+        kbd {font: initial; min-width: 19.2px; text-align: center; display: inline-block}
+        table {border-spacing: 0; margin: 12px; text-align: center}
+        td:not(.left, .right) {font-family: Times, serif; font-size: 25px; line-height: 1.1}
+        .left {text-align: left; white-space: nowrap}
+        .right {text-align: right; white-space: nowrap}
+        table.keyboard col {width: 17.5px}
+        table.keyboard td, kbd {background-color: beige; border: 2px outset beige}
+        table.keyboard td:not(.left, .right) {font-family: Times, serif; font-size: 25px; line-height: 1.4}
+        table.vowel col {width: 12px}
+        table.regular col {min-width: 48px}
+        table:not(.keyboard, .pseudo) * {border-width: 1px; border-color: black}
+        table:not(.keyboard, .pseudo) :not(.l, .r, .ho, .t, .b, .vo, .n) {border-style: solid}
+        table.pseudo {border: 0; text-align: left}
+        .l {border-style: solid none solid solid} /* left half */
+        .r {border-style: solid solid solid none} /* right half */
+        .ho {border-style: solid none} /* horizontal off */
+        .t {border-style: solid solid none solid} /* top half */
+        .b {border-style: none solid solid solid} /* bottom half */
+        .vo {border-style: none solid} /* vertical off */
+        .n {border-style: none} /* none */
+        div.cell {display: inline-block; text-align: center; border-width: 1px; border-style: solid; min-width: 48px; font-family: Times, serif; font-size: 25px; line-height: 1.1}
+        .shadow {background-color: lightgray}
+        .red {color: red}
+    </style>
+</head>
+<body>
+    <h2>安可IPA键盘（Anke IPA Keyboard）说明（2023.4）</h2>
+    <h3>总述</h3>
+    <ul>
+        <li>使用Microsoft Keyboard Layout（MSKLC）创建。</li>
+        <li>可输入：
+            <ul>
+                <li>标准与常用非标准或扩展IPA字母；</li>
+                <li>标准与常用非标准或扩展IPA符号；</li>
+                <li>常用上标IPA字母；</li>
+                <li>其他常用拉丁、希腊、西里尔字母；</li>
+                <li>其他常用符号。</li>
+            </ul>
+            （具体输入方式见后表。）
+        </li>
+        <li>当<kbd>AltGr</kbd>键未按下时，可作为一般的美式键盘使用；而<kbd>AltGr</kbd>+字母键<kbd>a</kbd>~<kbd>z</kbd>均为dead key，通过按下<kbd>AltGr</kbd>+字母键<kbd>a</kbd>~<kbd>z</kbd>后再按下第二个键来输入与之相关的其他IPA字母（通常，用作dead key的字母键表示（字理上的）字形来源，而第二个键通常起到描述性的作用，如卷舌鼻音ɳ通过dead key <kbd>AltGr</kbd>+<kbd>n</kbd>与表示卷舌的<kbd>r</kbd>键输入；部分第二个键亦需按住<kbd>Shift</kbd>键来输入）。特别地，dead key <kbd>AltGr</kbd>+<kbd>/</kbd>用于输入喉塞音以及与之相关的IPA字母，<kbd>AltGr</kbd>+<kbd>\</kbd>用于输入搭嘴音字母。</li>
+        <li>按下<kbd>AltGr</kbd>+字母键（<kbd>q</kbd>除外）后按下空格键可输入其对应的上标字母；部分其他上标IPA字母则通过按下<kbd>AltGr</kbd>+<kbd>Shift</kbd>+字母键后再按下第二个键来输入，此时按下的第二个键与输入对应的非上标IPA字母时的相同。（另外，按下<kbd>AltGr</kbd>+<kbd>Shift</kbd>+字母键后按下空格键也可输入其对应的上标字母。）</li>
+        <li>Dead key <kbd>AltGr</kbd>+<kbd>.</kbd>用于输入IPA符号。</li>
+        <li>Dead key <kbd>AltGr</kbd>+<kbd>`</kbd>、<kbd>'</kbd>、<kbd>^</kbd>、<kbd>~</kbd>、<kbd>"</kbd>、<kbd>-</kbd>、<kbd>=</kbd>、<kbd>;</kbd>、<kbd>_</kbd>、<kbd>></kbd>、<kbd><</kbd>、<kbd>:</kbd>、<kbd>[</kbd>、<kbd>]</kbd>用于输入常用拉丁、希腊、西里尔字母。</li>
+        <li>Dead key <kbd>AltGr</kbd>+<kbd>+</kbd>用于输入其他常用符号。</li>
+        <li>由于MSKLC不支持使用第零平面（基本多文种平面；BMP）以外的字符，所以位于第零平面以外的字母或符号均不可输入。</li>
+        <li>键盘布局（美式键盘；标注为<span class="red">红色</span>的为当<kbd>AltGr</kbd>键按下时的dead key）：
+            <table class="keyboard">
+                <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                <tr>
+                    <td colspan="4"><span class="red">~</span><br><span class="red">`</span></td><td colspan="4">!<br>1</td><td colspan="4">@<br>2</td><td colspan="4">#<br>3</td><td colspan="4">$<br>4</td><td colspan="4">%<br>5</td><td colspan="4"><span class="red">^</span><br>6</td><td colspan="4">&amp;<br>7</td><td colspan="4">*<br>8</td><td colspan="4">(<br>9</td><td colspan="4">)<br>0</td><td colspan="4"><span class="red">_</span><br><span class="red">-</span></td><td colspan="4"><span class="red">+</span><br><span class="red">=</span></td><td colspan="6" class="right">Backspace</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="left">Tab</td><td colspan="4"><span class="red">Q</span><br><span class="red">q</span></td><td colspan="4"><span class="red">W</span><br><span class="red">w</span></td><td colspan="4"><span class="red">E</span><br><span class="red">e</span></td><td colspan="4"><span class="red">R</span><br><span class="red">r</span></td><td colspan="4"><span class="red">T</span><br><span class="red">t</span></td><td colspan="4"><span class="red">Y</span><br><span class="red">y</span></td><td colspan="4"><span class="red">U</span><br><span class="red">u</span></td><td colspan="4"><span class="red">I</span><br><span class="red">i</span></td><td colspan="4"><span class="red">O</span><br><span class="red">o</span></td><td colspan="4"><span class="red">P</span><br><span class="red">p</span></td><td colspan="4">{<br><span class="red">[</span></td><td colspan="4">}<br><span class="red">]</span></td><td colspan="4"><span class="red">|</span><br><span class="red">\</span></td>
+                </tr>
+                <tr>
+                    <td colspan="7" class="left">Caps Lock</td><td colspan="4"><span class="red">A</span><br><span class="red">a</span></td><td colspan="4"><span class="red">S</span><br><span class="red">s</span></td><td colspan="4"><span class="red">D</span><br><span class="red">d</span></td><td colspan="4"><span class="red">F</span><br><span class="red">f</span></td><td colspan="4"><span class="red">G</span><br><span class="red">g</span></td><td colspan="4"><span class="red">H</span><br><span class="red">h</span></td><td colspan="4"><span class="red">J</span><br><span class="red">j</span></td><td colspan="4"><span class="red">K</span><br><span class="red">k</span></td><td colspan="4"><span class="red">L</span><br><span class="red">l</span></td><td colspan="4"><span class="red">:</span><br><span class="red">;</span></td><td colspan="4"><span class="red">"</span><br><span class="red">'</span></td><td colspan="7" class="right">Enter</td>
+                </tr>
+                <tr>
+                    <td colspan="9" class="left">Shift</td><td colspan="4"><span class="red">Z</span><br><span class="red">z</span></td><td colspan="4"><span class="red">X</span><br><span class="red">x</span></td><td colspan="4"><span class="red">C</span><br><span class="red">c</span></td><td colspan="4"><span class="red">V</span><br><span class="red">v</span></td><td colspan="4"><span class="red">B</span><br><span class="red">b</span></td><td colspan="4"><span class="red">N</span><br><span class="red">n</span></td><td colspan="4"><span class="red">M</span><br><span class="red">m</span></td><td colspan="4"><span class="red"><</span><br>,</td><td colspan="4"><span class="red">></span><br><span class="red">.</span></td><td colspan="4"><span class="red">?</span><br><span class="red">/</span></td><td colspan="9" class="right">Shift</td>
+                </tr>
+            </table>
+        </li>
+        <li>压缩包“ankeipa.zip”内为MSKLC生成的安装程序。解压并运行“setup.exe”安装后，从输入法列表中选择“Anke IPA Keyboard”就可以使用了。</li>
+    </ul>
+    <h3>IPA字母</h3>
+    <ul>
+        <li>对于需要通过dead key输入的IPA字母，上面一行表示输入方式（按住<kbd>AltGr</kbd>输入第一个字符（dead character），然后输入第二个字符；后同），下面一行表示所输入的字母。</li>
+        <li>标准IPA字母：<br>
+            <b>辅音（肺部气流）</b>
+            <table class="regular">
+                <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                <tr>
+                    <th></th><th colspan="2">双唇</th><th colspan="2">唇齿</th><th colspan="2">齿</th><th colspan="2">齿龈</th><th colspan="2">龈后</th><th colspan="2">卷舌</th><th colspan="2">硬腭</th><th colspan="2">软腭</th><th colspan="2">小舌</th><th colspan="2">咽</th><th colspan="2">喉</th>
+                </tr>
+                <tr>
+                    <th class="left">塞音</td><td class="l"><br>p</td><td class="r"><br>b</td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="ho"><br></td><td class="ho"><br>t</td><td class="ho"><br>d</td><td class="ho"><br></td><td class="r"><br></td><td class="l">tr<br>ʈ</td><td class="r">dr<br>ɖ</td><td class="l"><br>c</td><td class="r">jj<br>ɟ</td><td class="l"><br>k</td><td class="r">gg<br>ɡ</td><td class="l"><br>q</td><td class="r">gq<br>ɢ</td><td><br></td><td class="shadow"><br></td><td>//<br>ʔ</td><td class="shadow"><br></td>
+                </tr>
+                <tr>
+                    <th class="left">鼻音</td><td class="l"><br></td><td class="r"><br>m</td><td class="l"><br></td><td class="r">mv<br>ɱ</td><td class="l"><br></td><td class="ho"><br></td><td class="ho"><br></td><td class="ho"><br>n</td><td class="ho"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r">nr<br>ɳ</td><td class="l"><br></td><td class="r">nj<br>ɲ</td><td class="l"><br></td><td class="r">ng<br>ŋ</td><td class="l"><br></td><td class="r">nq<br>ɴ</td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td>
+                </tr>
+                <tr>
+                    <th class="left">颤音</td><td class="l"><br></td><td class="r">br<br>ʙ</td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="ho"><br></td><td class="ho"><br></td><td class="ho"><br>r</td><td class="ho"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l"><br></td><td class="r">rq<br>ʀ</td><td class="l"><br></td><td class="r"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td>
+                </tr>
+                <tr>
+                    <th class="left">拍音或闪音</td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r">vb<br>ⱱ</td><td class="l"><br></td><td class="ho"><br></td><td class="ho"><br></td><td class="ho">rd<br>ɾ</td><td class="ho"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r">rD<br>ɽ</td><td class="l"><br></td><td class="r"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td>
+                </tr>
+                <tr>
+                    <th class="left">擦音</td><td class="l">ph<br>ɸ</td><td class="r">bh<br>β</td><td class="l"><br>f</td><td class="r"><br>v</td><td class="l">th<br>θ</td><td class="r">dh<br>ð</td><td class="l"><br>s</td><td class="r"><br>z</td><td class="l">ss<br>ʃ</td><td class="r">zz<br>ʒ</td><td class="l">sr<br>ʂ</td><td class="r">zr<br>ʐ</td><td class="l">ch<br>ç</td><td class="r">jh<br>ʝ</td><td class="l"><br>x</td><td class="r">gh<br>ɣ</td><td class="l">xq<br>χ</td><td class="r">rh<br>ʁ</td><td class="l">h/<br>ħ</td><td class="r">/h<br>ʕ</td><td class="l"><br>h</td><td class="r">hh<br>ɦ</td>
+                </tr>
+                <tr>
+                    <th class="left">边擦音</td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l"><br></td><td class="ho"><br></td><td class="ho">ls<br>ɬ</td><td class="ho">lz<br>ɮ</td><td class="ho"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td>
+                </tr>
+                <tr>
+                    <th class="left">近音</td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r">vv<br>ʋ</td><td class="l"><br></td><td class="ho"><br></td><td class="ho"><br></td><td class="ho">rr<br>ɹ</td><td class="ho"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r">rR<br>ɻ</td><td class="l"><br></td><td class="r"><br>j</td><td class="l"><br></td><td class="r">wj<br>ɰ</td><td class="l"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td>
+                </tr>
+                <tr>
+                    <th class="left">边近音</td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l"><br></td><td class="ho"><br></td><td class="ho"><br></td><td class="ho"><br>l</td><td class="ho"><br></td><td class="r"><br></td><td class="l"><br></td><td class="r">lr<br>ɭ</td><td class="l"><br></td><td class="r">lj<br>ʎ</td><td class="l"><br></td><td class="r">lg<br>ʟ</td><td class="l"><br></td><td class="r"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td><td class="l shadow"><br></td><td class="r shadow"><br></td>
+                </tr>
+            </table>
+            <div style="display: flex; align-items: start;">
+                <div>
+                    <b>辅音（非肺部气流）</b>
+                    <table class="regular">
+                        <colgroup><col><col><col><col></colgroup>
+                        <tr>
+                            <th colspan="2">搭嘴音</th><th colspan="2">浊内爆音</th>
+                        </tr>
+                        <tr>
+                            <td class="l">\o<br>ʘ</td><td class="r left">双唇音</td><td class="l">b\<br>ɓ</td><td class="r left">双唇音</td>
+                        </tr>
+                        <tr>
+                            <td class="l">\\<br>ǀ</td><td class="r left">齿音</td><td class="l">d\<br>ɗ</td><td class="r left">齿音/龈音</td>
+                        </tr>
+                        <tr>
+                            <td class="l">\!<br>ǃ</td><td class="r left">龈（后）音</td><td class="l">d|<br>ᶑ</td><td class="r left">卷舌音</td>
+                        </tr>
+                        <tr>
+                            <td class="l">\=<br>ǂ</td><td class="r left">腭龈音</td><td class="l">j\<br>ʄ</td><td class="r left">硬腭音</td>
+                        </tr>
+                        <tr>
+                            <td class="l">\|<br>ǁ</td><td class="r left">龈边音</td><td class="l">g\<br>ɠ</td><td class="r left">软腭音</td>
+                        </tr>
+                        <tr>
+                            <td colspan="2" class="n"></td><td class="l">g|<br>ʛ</td><td class="r left">小舌音</td>
+                        </tr>
+                    </table>
+                    <b>其他符号</b>
+                    <table class="regular">
+                        <colgroup><col><col><col><col><col></colgroup>
+                        <tr>
+                            <td class="l">wh<br>ʍ</td><td class="r left">清唇-软腭擦音</td><td class="l">cj<br>ɕ</td><td class="ho">zj<br>ʑ</td><td class="r left">龈-腭擦音</td>
+                        </tr>
+                        <tr>
+                            <td class="l"><br>w</td><td class="r left">浊唇-软腭近音</td><td class="l"><br></td><td class="ho">rl<br>ɺ</td><td class="r left">浊龈边闪音</td>
+                        </tr>
+                        <tr>
+                            <td class="l">jw<br>ɥ</td><td class="r left">浊唇-硬腭近音</td><td class="l">sj<br>ɧ</td><td class="ho"><br></td><td class="r left">同时发ʃ和x</td>
+                        </tr>
+                        <tr>
+                            <td class="l">h?<br>ʜ</td><td class="r left">清会厌擦音</td>
+                        </tr>
+                        <tr>
+                            <td class="l">/H<br>ʢ</td><td class="r left">浊会厌擦音</td>
+                        </tr>
+                        <tr>
+                            <td class="l">/?<br>ʡ</td><td class="r left">会厌塞音</td>
+                        </tr>
+                    </table>
+                </div>
+                <div>
+                <div><b>元音</b></div>
+                <table class="vowel">
+                    <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                    <tr>
+                        <th class="n left"></th><th class="n" colspan="8">前</th><th class="n" colspan="16"></th><th class="n" colspan="8">央</th><th class="n" colspan="16"></th><th class="n" colspan="8">后</th>
+                    </tr>
+                    <tr>
+                        <th class="n left">闭</td><td class="n" colspan="4"><br>i</td><td class="n" colspan="4"><br>y</td><td class="n" colspan="16">----</td><td class="n" colspan="4">iu<br>ɨ</td><td class="n" colspan="4">uy<br>ʉ</td><td class="n" colspan="16">----</td><td class="n" colspan="4">ui<br>ɯ</td><td class="n" colspan="4"><br>u</td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></th>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td><td class="n" colspan="15">\&nbsp;&nbsp;<br>&nbsp;&nbsp;\</td><td class="n" colspan="4">ii<br>ɪ</td><td class="n" colspan="4">yy<br>ʏ</td><td class="n" colspan="14">\&nbsp;<br>&nbsp;\</td><td class="n" colspan="4"><br></td><td class="n" colspan="4">uu<br>ʊ</td><td class="n" colspan="3"></td><td class="n" colspan="8">|<br>|</td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td>
+                    </tr>
+                    <tr>
+                        <th class="n left">半闭</td><td class="n" colspan="8"></td><td class="n" colspan="4"><br>e</td><td class="n" colspan="4">oy<br>ø</td><td class="n" colspan="12">----</td><td class="n" colspan="4">eU<br>ɘ</td><td class="n" colspan="4">oY<br>ɵ</td><td class="n" colspan="12">----</td><td class="n" colspan="4">eu<br>ɤ</td><td class="n" colspan="4"><br>o</td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td><td class="n" colspan="30">\&nbsp;&nbsp;<br>&nbsp;&nbsp;\</td><td class="n" colspan="4">ee<br>ə</td><td class="n" colspan="4"><br></td><td class="n" colspan="10"></td><td class="n" colspan="8">|<br>|</td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td>
+                    </tr>
+                    <tr>
+                        <th class="n left">半开</td><td class="n" colspan="16"></td><td class="n" colspan="4">ea<br>ɛ</td><td class="n" colspan="4">oe<br>œ</td><td class="n" colspan="8">----</td><td class="n" colspan="4">eA<br>ɜ</td><td class="n" colspan="4">oA<br>ɞ</td><td class="n" colspan="8">----</td><td class="n" colspan="4">au<br>ʌ</td><td class="n" colspan="4">oa<br>ɔ</td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td><td class="n" colspan="20"></td><td class="n" colspan="4">ae<br>æ</td><td class="n" colspan="4"><br></td><td class="n" colspan="6"></td><td class="n" colspan="4">aE<br>ɐ</td><td class="n" colspan="4"><br></td><td class="n" colspan="6"></td><td class="n" colspan="8">|<br>|</td>
+                    </tr>
+                    <tr>
+                        <th class="n left"></td>
+                    </tr>
+                    <tr>
+                        <th class="n left">开</td><td class="n" colspan="24"></td><td class="n" colspan="4"><br>a</td><td class="n" colspan="4">oE<br>ɶ</td><td class="n" colspan="16">----</td><td class="n" colspan="4">aa<br>ɑ</td><td class="n" colspan="4">ao<br>ɒ</td>
+                    </tr>
+                </table>
+                </div>
+            </div>
+        </li>
+        <li>其他/非标准或扩展IPA字母：
+            <table class="pseudo">
+                <tr>
+                    <td>
+                        <div class="cell"><br>g</div><div class="cell">er<br>ɚ</div><div class="cell">eR<br>ɝ</div><div class="cell">ll<br>ɫ</div><div class="cell">dJ<br>ȡ</div><div class="cell">tJ<br>ȶ</div><div class="cell">nJ<br>ȵ</div><div class="cell">lJ<br>ȴ</div><div class="cell">ir<br>ɿ</div><div class="cell">iR<br>ʅ</div><div class="cell">yr<br>ʮ</div><div class="cell">yR<br>ʯ</div><div class="cell">aA<br>ᴀ</div><div class="cell">eE<br>ᴇ</div><div class="cell">oO<br>ꭥ</div><div class="cell">iI<br>ɩ</div><div class="cell">ou<br>ɷ</div><div class="cell">oU<br>ω</div><div class="cell">bb<br>ȸ</div><div class="cell">pp<br>ȹ</div><div class="cell">iU<br>ᵻ</div><div class="cell">uY<br>ᵿ</div><div class="cell">p\<br>ƥ</div><div class="cell">t\<br>ƭ</div><div class="cell">c\<br>ƈ</div><div class="cell">k\<br>ƙ</div><div class="cell">q\<br>ʠ</div><div class="cell">t|<br>ʇ</div><div class="cell">c|<br>ʗ</div><div class="cell">k|<br>ʞ</div><div class="cell">eO<br>ⱻ</div><div class="cell">lS<br>ꞎ</div><div class="cell">yu<br>ɏ</div><div class="cell">rH<br>ɼ</div><div class="cell">ts<br>ʦ</div><div class="cell">dz<br>ʣ</div><div class="cell">tS<br>ʧ</div><div class="cell">dZ<br>ʤ</div><div class="cell">tc<br>ʨ</div><div class="cell">dj<br>ʥ</div><div class="cell">fn<br>ʩ</div><div class="cell">qq<br>ꞯ</div><div class="cell">ww<br>ʬ</div><div class="cell">dd<br>ʭ</div>
+                    </td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+    <h3>IPA符号</h3>
+    <ul>
+        <li>按下dead key<kbd>AltGr</kbd>+<kbd>.</kbd>后，按下键盘上不同的键分别可输入的IPA符号的布局（标注为<span class="red">红色</span>的为非标准或扩展IPA符号）：
+            <table class="keyboard">
+                <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                <tr>
+                    <td colspan="4">◌̂<br>◌̌</td><td colspan="4">◌̏<br>˩</td><td colspan="4">◌̀<br>˨</td><td colspan="4">◌̄<br>˧</td><td colspan="4">◌́<br>˦</td><td colspan="4">◌̋<br>˥</td><td colspan="4">◌᷇<br>◌᷄</td><td colspan="4">◌᷆<br>◌᷅</td><td colspan="4">◌᷉<br>◌᷈</td><td colspan="4">◌͑<br>◌̜</td><td colspan="4">◌͗<br>◌̹</td><td colspan="4">◌˗<br>◌̠</td><td colspan="4">◌˖<br>◌̟</td><td colspan="6" class="right">Backspace</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="left">Tab</td><td colspan="4"><br></td><td colspan="4"><span class="red">◌͎</span><br><span class="red">◌̫</span></td><td colspan="4"><br></td><td colspan="4"><span class="red">◌̢</span><br>◌˞</td><td colspan="4"><span class="red">◌͉</span><br><span class="red">◌͈</span></td><td colspan="4"><br></td><td colspan="4">◌͜<br>◌͡</td><td colspan="4">◌̍<br>◌̩</td><td colspan="4">◌̊<br>◌̥</td><td colspan="4"><br></td><td colspan="4">◌˕<br>◌̞</td><td colspan="4">◌˔<br>◌̝</td><td colspan="4">‖<br>ʼ</td>
+                </tr>
+                <tr>
+                    <td colspan="7" class="left">Caps Lock</td><td colspan="4"><span class="red">◌͇</span><br>◌̺</td><td colspan="4">ꜛ<br>ꜜ</td><td colspan="4"><span class="red">◌͆</span><br>◌̪</td><td colspan="4"><br></td><td colspan="4">↘<br>↗</td><td colspan="4"><span class="red">↑</span><br><span class="red">↓</span></td><td colspan="4">◌̑<br>◌̯</td><td colspan="4"><br></td><td colspan="4">◌̚<br>◌̻</td><td colspan="4">ː<br>ˑ</td><td colspan="4">◌̈<br>ˈ</td><td colspan="7" class="right">Enter</td>
+                </tr>
+                <tr>
+                    <td colspan="9" class="left">Shift</td><td colspan="4"><br></td><td colspan="4"><br>◌̽</td><td colspan="4"><span class="red">◌̡</span><br>◌̰</td><td colspan="4">◌̆<br>◌̬</td><td colspan="4"><br>◌̤</td><td colspan="4"><span class="red">◌͊</span><br>◌̃</td><td colspan="4"><span class="red">◌͍</span><br>◌̼</td><td colspan="4">◌̘<br>ˌ</td><td colspan="4">◌̙<br>‿</td><td colspan="4"><span class="red">˭</span><br>◌̴</td><td colspan="9" class="right">Shift</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+    <h3>其他常用字母</h3>
+    <ul>
+        <li>拉丁字母
+            <ul>
+                <li>上面一行表示输入方式，下面一行表示所输入的字母。</li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>`</kbd>（grave）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">`A<br>À</div><div class="cell">`E<br>È</div><div class="cell">`I<br>Ì</div><div class="cell">`O<br>Ò</div><div class="cell">`U<br>Ù</div><div class="cell">`a<br>à</div><div class="cell">`e<br>è</div><div class="cell">`i<br>ì</div><div class="cell">`o<br>ò</div><div class="cell">`u<br>ù</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>'</kbd>（acute）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">'A<br>Á</div><div class="cell">'E<br>É</div><div class="cell">'I<br>Í</div><div class="cell">'O<br>Ó</div><div class="cell">'U<br>Ú</div><div class="cell">'Y<br>Ý</div><div class="cell">'a<br>á</div><div class="cell">'e<br>é</div><div class="cell">'i<br>í</div><div class="cell">'o<br>ó</div><div class="cell">'u<br>ú</div><div class="cell">'y<br>ý</div><div class="cell">'C<br>Ć</div><div class="cell">'c<br>ć</div><div class="cell">'L<br>Ĺ</div><div class="cell">'l<br>ĺ</div><div class="cell">'N<br>Ń</div><div class="cell">'n<br>ń</div><div class="cell">'R<br>Ŕ</div><div class="cell">'r<br>ŕ</div><div class="cell">'S<br>Ś</div><div class="cell">'s<br>ś</div><div class="cell">'Z<br>Ź</div><div class="cell">'z<br>ź</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>^</kbd>（circumflex）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">^A<br>Â</div><div class="cell">^E<br>Ê</div><div class="cell">^I<br>Î</div><div class="cell">^O<br>Ô</div><div class="cell">^U<br>Û</div><div class="cell">^a<br>â</div><div class="cell">^e<br>ê</div><div class="cell">^i<br>î</div><div class="cell">^o<br>ô</div><div class="cell">^u<br>û</div><div class="cell">^C<br>Ĉ</div><div class="cell">^c<br>ĉ</div><div class="cell">^G<br>Ĝ</div><div class="cell">^g<br>ĝ</div><div class="cell">^H<br>Ĥ</div><div class="cell">^h<br>ĥ</div><div class="cell">^J<br>Ĵ</div><div class="cell">^j<br>ĵ</div><div class="cell">^S<br>Ŝ</div><div class="cell">^s<br>ŝ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>~</kbd>（tilde）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">~A<br>Ã</div><div class="cell">~N<br>Ñ</div><div class="cell">~O<br>Õ</div><div class="cell">~a<br>ã</div><div class="cell">~n<br>ñ</div><div class="cell">~o<br>õ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>"</kbd>（diaeresis）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">"A<br>Ä</div><div class="cell">"E<br>Ë</div><div class="cell">"I<br>Ï</div><div class="cell">"O<br>Ö</div><div class="cell">"U<br>Ü</div><div class="cell">"a<br>ä</div><div class="cell">"e<br>ë</div><div class="cell">"i<br>ï</div><div class="cell">"o<br>ö</div><div class="cell">"u<br>ü</div><div class="cell">"y<br>ÿ</div><div class="cell">"Y<br>Ÿ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>-</kbd>（ring、stroke、特殊字母）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">-A<br>Å</div><div class="cell">-D<br>Ð</div><div class="cell">-O<br>Ø</div><div class="cell">-T<br>Þ</div><div class="cell">-a<br>å</div><div class="cell">-d<br>ð</div><div class="cell">-o<br>ø</div><div class="cell">-t<br>þ</div><div class="cell">-L<br>Ł</div><div class="cell">-l<br>ł</div><div class="cell">-U<br>Ů</div><div class="cell">-u<br>ů</div><div class="cell">-s<br>ſ</div><div class="cell">-Y<br>Ȝ</div><div class="cell">-y<br>ȝ</div><div class="cell">-W<br>Ƿ</div><div class="cell">-w<br>ƿ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>=</kbd>（合字）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">=A<br>Æ</div><div class="cell">=s<br>ß</div><div class="cell">=a<br>æ</div><div class="cell">=O<br>Œ</div><div class="cell">=o<br>œ</div><div class="cell">=S<br>ẞ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>;</kbd>（cedilla、breve）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">;C<br>Ç</div><div class="cell">;c<br>ç</div><div class="cell">;A<br>Ă</div><div class="cell">;a<br>ă</div><div class="cell">;G<br>Ğ</div><div class="cell">;g<br>ğ</div><div class="cell">;S<br>Ş</div><div class="cell">;s<br>ş</div><div class="cell">;T<br>Ţ</div><div class="cell">;t<br>ţ</div><div class="cell">;U<br>Ŭ</div><div class="cell">;u<br>ŭ</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>_</kbd>（macron）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">_A<br>Ā</div><div class="cell">_a<br>ā</div><div class="cell">_E<br>Ē</div><div class="cell">_e<br>ē</div><div class="cell">_I<br>Ī</div><div class="cell">_i<br>ī</div><div class="cell">_O<br>Ō</div><div class="cell">_o<br>ō</div><div class="cell">_U<br>Ū</div><div class="cell">_u<br>ū</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>></kbd>（ogonek、dot）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">>A<br>Ą</div><div class="cell">>a<br>ą</div><div class="cell">>E<br>Ę</div><div class="cell">>e<br>ę</div><div class="cell">>I<br>İ</div><div class="cell">>i<br>ı</div><div class="cell">>Z<br>Ż</div><div class="cell">>z<br>ż</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd><</kbd>（caron）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">&lt;C<br>Č</div><div class="cell">&lt;c<br>č</div><div class="cell">&lt;D<br>Ď</div><div class="cell">&lt;d<br>ď</div><div class="cell">&lt;E<br>Ě</div><div class="cell">&lt;e<br>ě</div><div class="cell">&lt;L<br>Ľ</div><div class="cell">&lt;l<br>ľ</div><div class="cell">&lt;N<br>Ň</div><div class="cell">&lt;n<br>ň</div><div class="cell">&lt;R<br>Ř</div><div class="cell">&lt;r<br>ř</div><div class="cell">&lt;S<br>Š</div><div class="cell">&lt;s<br>š</div><div class="cell">&lt;T<br>Ť</div><div class="cell">&lt;t<br>ť</div><div class="cell">&lt;Z<br>Ž</div><div class="cell">&lt;z<br>ž</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+                <li>Dead key：<kbd>AltGr</kbd>+<kbd>:</kbd>（double acute、comma）
+                    <table class="pseudo">
+                        <tr>
+                            <td>
+                                <div class="cell">:O<br>Ő</div><div class="cell">:o<br>ő</div><div class="cell">:U<br>Ű</div><div class="cell">:u<br>ű</div><div class="cell">:S<br>Ș</div><div class="cell">:s<br>ș</div><div class="cell">:T<br>Ț</div><div class="cell">:t<br>ț</div>
+                            </td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </li>
+        <li>希腊字母
+            <ul>
+                <li>按下dead key <kbd>AltGr</kbd>+<kbd>[</kbd>后，按下键盘上不同的键分别可输入的希腊字母的布局：
+                    <table class="keyboard">
+                        <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                        <tr>
+                            <td colspan="4">Ϻ<br>ϻ</td><td colspan="4">Ά<br>ά</td><td colspan="4">Έ<br>έ</td><td colspan="4">Ή<br>ή</td><td colspan="4">Ί<br>ί</td><td colspan="4">Ό<br>ό</td><td colspan="4">Ύ<br>ύ</td><td colspan="4">Ώ<br>ώ</td><td colspan="4">Ϊ<br>ϊ</td><td colspan="4">Ϋ<br>ϋ</td><td colspan="4"><br>ς</td><td colspan="4"><br>ΐ</td><td colspan="4"><br>ΰ</td><td colspan="6" class="right">Backspace</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="left">Tab</td><td colspan="4">Ϙ<br>ϙ</td><td colspan="4">Ϝ<br>ϝ</td><td colspan="4">Ε<br>ε</td><td colspan="4">Ρ<br>ρ</td><td colspan="4">Τ<br>τ</td><td colspan="4">Υ<br>υ</td><td colspan="4">Ω<br>ω</td><td colspan="4">Ι<br>ι</td><td colspan="4">Ο<br>ο</td><td colspan="4">Π<br>π</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" class="left">Caps Lock</td><td colspan="4">Α<br>α</td><td colspan="4">Σ<br>σ</td><td colspan="4">Δ<br>δ</td><td colspan="4">Φ<br>φ</td><td colspan="4">Γ<br>γ</td><td colspan="4">Η<br>η</td><td colspan="4">Ψ<br>ψ</td><td colspan="4">Κ<br>κ</td><td colspan="4">Λ<br>λ</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="7" class="right">Enter</td>
+                        </tr>
+                        <tr>
+                            <td colspan="9" class="left">Shift</td><td colspan="4">Ζ<br>ζ</td><td colspan="4">Ξ<br>ξ</td><td colspan="4">Χ<br>χ</td><td colspan="4">Θ<br>θ</td><td colspan="4">Β<br>β</td><td colspan="4">Ν<br>ν</td><td colspan="4">Μ<br>μ</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4">;<br>&nbsp;</td><td colspan="9" class="right">Shift</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </li>
+        <li>西里尔字母
+            <ul>
+                <li>按下dead key <kbd>AltGr</kbd>+<kbd>]</kbd>后，按下键盘上不同的键分别可输入的西里尔字母的布局：
+                    <table class="keyboard">
+                        <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                        <tr>
+                            <td colspan="4"><br></td><td colspan="4">Ш<br>ш</td><td colspan="4">Щ<br>щ</td><td colspan="4">Ъ<br>ъ</td><td colspan="4">Ь<br>ь</td><td colspan="4">Э<br>э</td><td colspan="4">Ю<br>ю</td><td colspan="4">Я<br>я</td><td colspan="4">І<br>і</td><td colspan="4">Ї<br>ї</td><td colspan="4">Ё<br>ё</td><td colspan="4">Є<br>є</td><td colspan="4">Ґ<br>ґ</td><td colspan="6" class="right">Backspace</td>
+                        </tr>
+                        <tr>
+                            <td colspan="6" class="left">Tab</td><td colspan="4">Ч<br>ч</td><td colspan="4">Ў<br>ў</td><td colspan="4">Е<br>е</td><td colspan="4">Р<br>р</td><td colspan="4">Т<br>т</td><td colspan="4">Ы<br>ы</td><td colspan="4">У<br>у</td><td colspan="4">И<br>и</td><td colspan="4">О<br>о</td><td colspan="4">П<br>п</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td>
+                        </tr>
+                        <tr>
+                            <td colspan="7" class="left">Caps Lock</td><td colspan="4">А<br>а</td><td colspan="4">С<br>с</td><td colspan="4">Д<br>д</td><td colspan="4">Ф<br>ф</td><td colspan="4">Г<br>г</td><td colspan="4">Х<br>х</td><td colspan="4">Й<br>й</td><td colspan="4">К<br>к</td><td colspan="4">Л<br>л</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="7" class="right">Enter</td>
+                        </tr>
+                        <tr>
+                            <td colspan="9" class="left">Shift</td><td colspan="4">З<br>з</td><td colspan="4">Ж<br>ж</td><td colspan="4">Ц<br>ц</td><td colspan="4">В<br>в</td><td colspan="4">Б<br>б</td><td colspan="4">Н<br>н</td><td colspan="4">М<br>м</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="9" class="right">Shift</td>
+                        </tr>
+                    </table>
+                </li>
+            </ul>
+        </li>
+    </ul>
+    <h3>其他符号</h3>
+    <ul>
+        <li>按下dead key <kbd>AltGr</kbd>+<kbd>+</kbd>后，按下键盘上不同的键分别可输入的其他符号的布局：
+            <table class="keyboard">
+                <colgroup><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col><col></colgroup>
+                <tr>
+                    <td colspan="4">¬<br>·</td><td colspan="4">¡<br>¹</td><td colspan="4">¶<br>²</td><td colspan="4">§<br>³</td><td colspan="4">¤<br>⁴</td><td colspan="4">‰<br>⁵</td><td colspan="4">°<br>⁶</td><td colspan="4">¼<br>⁷</td><td colspan="4">×<br>⁸</td><td colspan="4">½<br>⁹</td><td colspan="4">¾<br>⁰</td><td colspan="4">¯<br>±</td><td colspan="4">≠<br>≈</td><td colspan="6" class="right">Backspace</td>
+                </tr>
+                <tr>
+                    <td colspan="6" class="left">Tab</td><td colspan="4"><br></td><td colspan="4">₩<br>&nbsp;</td><td colspan="4">€<br>&nbsp;</td><td colspan="4">₽<br>®</td><td colspan="4"><br>™</td><td colspan="4">¥<br>&nbsp;</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br>º</td><td colspan="4"><br></td><td colspan="4"><br>⟨</td><td colspan="4"><br>⟩</td><td colspan="4">¦<br>∅</td>
+                </tr>
+                <tr>
+                    <td colspan="7" class="left">Caps Lock</td><td colspan="4"><br>ª</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4">£<br>&nbsp;</td><td colspan="4"><br>¸</td><td colspan="4">¨<br>´</td><td colspan="7" class="right">Enter</td>
+                </tr>
+                <tr>
+                    <td colspan="9" class="left">Shift</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4">¢<br>©</td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br></td><td colspan="4"><br>µ</td><td colspan="4">«<br>&nbsp;</td><td colspan="4">»<br>◌</td><td colspan="4">¿<br>÷</td><td colspan="9" class="right">Shift</td>
+                </tr>
+            </table>
+        </li>
+    </ul>
+</body>
+</html>
