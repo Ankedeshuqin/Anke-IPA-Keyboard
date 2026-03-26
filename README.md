@@ -28,7 +28,7 @@
       <td colspan="3" align="left">Tab</td><td colspan="2"><mark>Q</mark><br><mark>q</mark></td><td colspan="2"><mark>W</mark><br><mark>w</mark></td><td colspan="2"><mark>E</mark><br><mark>e</mark></td><td colspan="2"><mark>R</mark><br><mark>r</mark></td><td colspan="2"><mark>T</mark><br><mark>t</mark></td><td colspan="2"><mark>Y</mark><br><mark>y</mark></td><td colspan="2"><mark>U</mark><br><mark>u</mark></td><td colspan="2"><mark>I</mark><br><mark>i</mark></td><td colspan="2"><mark>O</mark><br><mark>o</mark></td><td colspan="2"><mark>P</mark><br><mark>p</mark></td><td colspan="2">{<br><mark>[</mark></td><td colspan="2">}<br><mark>]</mark></td><td colspan="2"><mark>|</mark><br><mark>\</mark></td>
     </tr>
     <tr align="center">
-      <td colspan="4" align="left">Caps Lock</td><td colspan="2"><mark>A</mark><br><mark>a</mark></td><td colspan="2"><mark>S</mark><br><mark>s</mark></td><td colspan="2"><mark>D</mark><br><mark>d</mark></td><td colspan="2"><mark>F</mark><br><mark>f</mark></td><td colspan="2"><mark>G</mark><br><mark>g</mark></td><td colspan="2"><mark>H</mark><br><mark>h</mark></td><td colspan="2"><mark>J</mark><br><mark>j</mark></td><td colspan="2"><mark>K</mark><br><mark>k</mark></td><td colspan="2"><mark>L</mark><br><mark>l</mark></td><td colspan="2"><mark>:</mark><br><mark>;</mark></td><td colspan="2"><mark>"</mark><br><mark>'</mark></td><td colspan="2" align="right">Enter</td>
+      <td colspan="4" align="left">Caps&nbsp;Lock</td><td colspan="2"><mark>A</mark><br><mark>a</mark></td><td colspan="2"><mark>S</mark><br><mark>s</mark></td><td colspan="2"><mark>D</mark><br><mark>d</mark></td><td colspan="2"><mark>F</mark><br><mark>f</mark></td><td colspan="2"><mark>G</mark><br><mark>g</mark></td><td colspan="2"><mark>H</mark><br><mark>h</mark></td><td colspan="2"><mark>J</mark><br><mark>j</mark></td><td colspan="2"><mark>K</mark><br><mark>k</mark></td><td colspan="2"><mark>L</mark><br><mark>l</mark></td><td colspan="2"><mark>:</mark><br><mark>;</mark></td><td colspan="2"><mark>"</mark><br><mark>'</mark></td><td colspan="2" align="right">Enter</td>
     </tr>
     <tr align="center">
       <td colspan="5" align="left">Shift</td><td colspan="2"><mark>Z</mark><br><mark>z</mark></td><td colspan="2"><mark>X</mark><br><mark>x</mark></td><td colspan="2"><mark>C</mark><br><mark>c</mark></td><td colspan="2"><mark>V</mark><br><mark>v</mark></td><td colspan="2"><mark>B</mark><br><mark>b</mark></td><td colspan="2"><mark>N</mark><br><mark>n</mark></td><td colspan="2"><mark>M</mark><br><mark>m</mark></td><td colspan="2"><mark><</mark><br>,</td><td colspan="2"><mark>></mark><br><mark>.</mark></td><td colspan="2"><mark>?</mark><br><mark>/</mark></td><td colspan="3" align="right">Shift</td>
@@ -136,7 +136,7 @@
       <td></td><td colspan="15">\&nbsp;&nbsp;<br>&nbsp;&nbsp;\</td><td colspan="4">ii<br>ɪ</td><td colspan="4">yy<br>ʏ</td><td colspan="14">\&nbsp;<br>&nbsp;\</td><td colspan="4"></td><td colspan="4">uu<br>ʊ</td><td colspan="3"></td><td colspan="8">|<br>|</td>
     </tr>
     <tr align="center">
-      <th align="left">半闭</th><td colspan="8"></td><td colspan="4"><br>e</td><td colspan="4">oy<br>ø</td><td colspan="12">----</td><td colspan="4">eU<br>ɘ</td><td colspan="4">oY<br>ɵ</td><td colspan="12">----</td><td colspan="4">eu<br>ɤ</td><td colspan="4"><br>o</td>
+      <th align="left">半&zwj;闭</th><td colspan="8"></td><td colspan="4"><br>e</td><td colspan="4">oy<br>ø</td><td colspan="12">----</td><td colspan="4">eU<br>ɘ</td><td colspan="4">oY<br>ɵ</td><td colspan="12">----</td><td colspan="4">eu<br>ɤ</td><td colspan="4"><br>o</td>
     </tr>
     <tr align="center">
       <td></td><td colspan="30">\&nbsp;&nbsp;<br>&nbsp;&nbsp;\</td><td colspan="4">ee<br>ə</td><td colspan="4"></td><td colspan="10"></td><td colspan="8">|<br>|</td>
@@ -169,7 +169,7 @@
       <td colspan="3" align="left">Tab</td><td colspan="2"></td><td colspan="2"><mark>◌͎</mark><br><mark>◌̫</mark></td><td colspan="2"></td><td colspan="2"><mark>◌̢</mark><br>◌˞</td><td colspan="2"><mark>◌͉</mark><br><mark>◌͈</mark></td><td colspan="2"></td><td colspan="2">◌͜<br>◌͡</td><td colspan="2">◌̍<br>◌̩</td><td colspan="2">◌̊<br>◌̥</td><td colspan="2"></td><td colspan="2">◌˕<br>◌̞</td><td colspan="2">◌˔<br>◌̝</td><td colspan="2">‖<br>ʼ</td>
     </tr>
     <tr align="center">
-      <td colspan="4" align="left">Caps Lock</td><td colspan="2"><mark>◌͇</mark><br>◌̺</td><td colspan="2">ꜛ<br>ꜜ</td><td colspan="2"><mark>◌͆</mark><br>◌̪</td><td colspan="2"></td><td colspan="2">↘<br>↗</td><td colspan="2"><mark>↑</mark><br><mark>↓</mark></td><td colspan="2">◌̑<br>◌̯</td><td colspan="2"></td><td colspan="2">◌̚<br>◌̻</td><td colspan="2">ː<br>ˑ</td><td colspan="2">◌̈<br>ˈ</td><td colspan="3" align="right">Enter</td>
+      <td colspan="4" align="left">Caps&zwj;Lock</td><td colspan="2"><mark>◌͇</mark><br>◌̺</td><td colspan="2">ꜛ<br>ꜜ</td><td colspan="2"><mark>◌͆</mark><br>◌̪</td><td colspan="2"></td><td colspan="2">↘<br>↗</td><td colspan="2"><mark>↑</mark><br><mark>↓</mark></td><td colspan="2">◌̑<br>◌̯</td><td colspan="2"></td><td colspan="2">◌̚<br>◌̻</td><td colspan="2">ː<br>ˑ</td><td colspan="2">◌̈<br>ˈ</td><td colspan="3" align="right">Enter</td>
     </tr>
     <tr align="center">
       <td colspan="5" align="left">Shift</td><td colspan="2"></td><td colspan="2"><br>◌̽</td><td colspan="2"><mark>◌̡</mark><br>◌̰</td><td colspan="2">◌̆<br>◌̬</td><td colspan="2"><br>◌̤</td><td colspan="2"><mark>◌͊</mark><br>◌̃</td><td colspan="2"><mark>◌͍</mark><br>◌̼</td><td colspan="2">◌̘<br>ˌ</td><td colspan="2">◌̙<br>‿</td><td colspan="2"><mark>˭</mark><br>◌̴</td><td colspan="3" align="right">Shift</td>
@@ -263,7 +263,7 @@
         <td colspan="3" align="left">Tab</td><td colspan="2">Ϙ<br>ϙ</td><td colspan="2">Ϝ<br>ϝ</td><td colspan="2">Ε<br>ε</td><td colspan="2">Ρ<br>ρ</td><td colspan="2">Τ<br>τ</td><td colspan="2">Υ<br>υ</td><td colspan="2">Ω<br>ω</td><td colspan="2">Ι<br>ι</td><td colspan="2">Ο<br>ο</td><td colspan="2">Π<br>π</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td>
       </tr>
       <tr align="center">
-        <td colspan="4" align="left">Caps Lock</td><td colspan="2">Α<br>α</td><td colspan="2">Σ<br>σ</td><td colspan="2">Δ<br>δ</td><td colspan="2">Φ<br>φ</td><td colspan="2">Γ<br>γ</td><td colspan="2">Η<br>η</td><td colspan="2">Ψ<br>ψ</td><td colspan="2">Κ<br>κ</td><td colspan="2">Λ<br>λ</td><td colspan="2"></td><td colspan="2"></td><td colspan="2" align="right">Enter</td>
+        <td colspan="4" align="left">Caps&zwj;Lock</td><td colspan="2">Α<br>α</td><td colspan="2">Σ<br>σ</td><td colspan="2">Δ<br>δ</td><td colspan="2">Φ<br>φ</td><td colspan="2">Γ<br>γ</td><td colspan="2">Η<br>η</td><td colspan="2">Ψ<br>ψ</td><td colspan="2">Κ<br>κ</td><td colspan="2">Λ<br>λ</td><td colspan="2"></td><td colspan="2"></td><td colspan="2" align="right">Enter</td>
       </tr>
       <tr align="center">
         <td colspan="5" align="left">Shift</td><td colspan="2">Ζ<br>ζ</td><td colspan="2">Ξ<br>ξ</td><td colspan="2">Χ<br>χ</td><td colspan="2">Θ<br>θ</td><td colspan="2">Β<br>β</td><td colspan="2">Ν<br>ν</td><td colspan="2">Μ<br>μ</td><td colspan="2"></td><td colspan="2"></td><td colspan="2">;<br>&nbsp;</td><td colspan="3" align="right">Shift</td>
@@ -279,7 +279,7 @@
         <td colspan="3" align="left">Tab</td><td colspan="2">Ч<br>ч</td><td colspan="2">Ў<br>ў</td><td colspan="2">Е<br>е</td><td colspan="2">Р<br>р</td><td colspan="2">Т<br>т</td><td colspan="2">Ы<br>ы</td><td colspan="2">У<br>у</td><td colspan="2">И<br>и</td><td colspan="2">О<br>о</td><td colspan="2">П<br>п</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td>
       </tr>
       <tr align="center">
-        <td colspan="4" align="left">Caps Lock</td><td colspan="2">А<br>а</td><td colspan="2">С<br>с</td><td colspan="2">Д<br>д</td><td colspan="2">Ф<br>ф</td><td colspan="2">Г<br>г</td><td colspan="2">Х<br>х</td><td colspan="2">Й<br>й</td><td colspan="2">К<br>к</td><td colspan="2">Л<br>л</td><td colspan="2"></td><td colspan="2"></td><td colspan="2" align="right">Enter</td>
+        <td colspan="4" align="left">Caps&zwj;Lock</td><td colspan="2">А<br>а</td><td colspan="2">С<br>с</td><td colspan="2">Д<br>д</td><td colspan="2">Ф<br>ф</td><td colspan="2">Г<br>г</td><td colspan="2">Х<br>х</td><td colspan="2">Й<br>й</td><td colspan="2">К<br>к</td><td colspan="2">Л<br>л</td><td colspan="2"></td><td colspan="2"></td><td colspan="2" align="right">Enter</td>
       </tr>
       <tr align="center">
         <td colspan="5" align="left">Shift</td><td colspan="2">З<br>з</td><td colspan="2">Ж<br>ж</td><td colspan="2">Ц<br>ц</td><td colspan="2">В<br>в</td><td colspan="2">Б<br>б</td><td colspan="2">Н<br>н</td><td colspan="2">М<br>м</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="3" align="right">Shift</td>
@@ -297,7 +297,7 @@
       <td colspan="3" align="left">Tab</td><td colspan="2"></td><td colspan="2">₩<br>&nbsp;</td><td colspan="2">€<br>&nbsp;</td><td colspan="2">₽<br>®</td><td colspan="2"><br>™</td><td colspan="2">¥<br>&nbsp;</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"><br>º</td><td colspan="2"></td><td colspan="2"><br>⟨</td><td colspan="2"><br>⟩</td><td colspan="2">¦<br>∅</td>
     </tr>
     <tr align="center">
-      <td colspan="4" align="left">Caps Lock</td><td colspan="2"><br>ª</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2">£<br>&nbsp;</td><td colspan="2"><br>¸</td><td colspan="2">¨<br>´</td><td colspan="2" align="right">Enter</td>
+      <td colspan="4" align="left">Caps&zwj;Lock</td><td colspan="2"><br>ª</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2">£<br>&nbsp;</td><td colspan="2"><br>¸</td><td colspan="2">¨<br>´</td><td colspan="2" align="right">Enter</td>
     </tr>
     <tr align="center">
       <td colspan="5" align="left">Shift</td><td colspan="2"></td><td colspan="2"></td><td colspan="2">¢<br>©</td><td colspan="2"></td><td colspan="2"></td><td colspan="2"></td><td colspan="2"><br>µ</td><td colspan="2">«<br>&nbsp;</td><td colspan="2">»<br>◌</td><td colspan="2">¿<br>÷</td><td colspan="3" align="right">Shift</td>
