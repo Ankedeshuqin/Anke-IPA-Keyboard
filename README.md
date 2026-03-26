@@ -1,5 +1,7 @@
 # 安可IPA键盘（Anke IPA Keyboard）
 
+[查看HTML版说明](https://ankedeshuqin.github.io/Anke-IPA-Keyboard/)
+
 ## 总述
 
 - 使用Microsoft Keyboard Layout（MSKLC）创建。
