@@ -81,13 +81,13 @@
       <th colspan="2">搭嘴音</th><th colspan="2">浊内爆音</th>
     </tr>
     <tr>
-      <td align="center">\o<br>ʘ</td><td>双唇音</td><td align="center">b\<br>ɓ</td><td>双唇音</td>
+      <td align="center">\0<br>ʘ</td><td>双唇音</td><td align="center">b\<br>ɓ</td><td>双唇音</td>
     </tr>
     <tr>
       <td align="center">\\<br>ǀ</td><td>齿音</td><td align="center">d\<br>ɗ</td><td>齿音/龈音</td>
     </tr>
     <tr>
-      <td align="center">\!<br>ǃ</td><td>龈（后）音</td><td align="center">d|<br>ᶑ</td><td>卷舌音</td>
+      <td align="center">\1<br>ǃ</td><td>龈（后）音</td><td align="center">d|<br>ᶑ</td><td>卷舌音</td>
     </tr>
     <tr>
       <td align="center">\=<br>ǂ</td><td>腭龈音</td><td align="center">j\<br>ʄ</td><td>硬腭音</td>
