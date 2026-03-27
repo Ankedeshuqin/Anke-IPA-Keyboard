@@ -13,7 +13,7 @@
   - 其他常用符号。
   
   （具体输入方式见后表。）
-- 当<kbd>AltGr</kbd>键未按下时，可作为一般的美式键盘使用；而<kbd>AltGr</kbd>+字母键<kbd>a</kbd>\~<kbd>z</kbd>均为dead key，通过按下<kbd>AltGr</kbd>+字母键后再按下第二个键来输入与之相关的其他IPA字母（通常，用作dead key的字母键表示（字理上的）字形来源，而第二个键通常起到描述性的作用，如卷舌鼻音ɳ通过dead key <kbd>AltGr</kbd>+<kbd>n</kbd>与表示卷舌的<kbd>r</kbd>键输入；部分第二个键亦需按住<kbd>Shift</kbd>键来输入）。特别地，dead key <kbd>AltGr</kbd>+<kbd>/</kbd>用于输入喉塞音以及与之相关的IPA字母，<kbd>AltGr</kbd>+<kbd>\\</kbd>用于输入搭嘴音字母。
+- 当<kbd>AltGr</kbd>键未按下时，可作为一般的美式键盘使用；而<kbd>AltGr</kbd>+字母键<kbd>a</kbd>\~<kbd>z</kbd>均为dead key，通过按下<kbd>AltGr</kbd>+字母键后再按下第二个键来输入与之相关的其他IPA字母（通常，用作dead key的字母键表示（字理上的）字形来源，而第二个键通常起到描述性的作用，如卷舌鼻音ɳ通过dead key <kbd>AltGr</kbd>+<kbd>n</kbd>与表示卷舌的<kbd>r</kbd>键输入；部分第二个键亦需按住<kbd>Shift</kbd>键来输入）。特别地，dead key <kbd>AltGr</kbd>+<kbd>/</kbd>用于输入喉塞音（ʔ）及与之相关的IPA字母，<kbd>AltGr</kbd>+<kbd>\\</kbd>用于输入非肺部气流辅音相关的特殊IPA字母。
 - 按下<kbd>AltGr</kbd>+字母键（<kbd>q</kbd>除外）后按下空格键可输入其对应的上标字母；部分其他上标IPA字母则通过按下<kbd>AltGr</kbd>+<kbd>Shift</kbd>+字母键后再按下第二个键来输入，此时按下的第二个键与输入对应的非上标IPA字母时的相同。（另外，按下<kbd>AltGr</kbd>+<kbd>Shift</kbd>+字母键后按下空格键也可输入其对应的上标字母。）
 - Dead key <kbd>AltGr</kbd>+<kbd>.</kbd>用于输入IPA符号。
 - Dead key <kbd>AltGr</kbd>+<kbd>`</kbd>、<kbd>'</kbd>、<kbd>^</kbd>、<kbd>~</kbd>、<kbd>"</kbd>、<kbd>-</kbd>、<kbd>=</kbd>、<kbd>;</kbd>、<kbd>_</kbd>、<kbd>></kbd>、<kbd><</kbd>、<kbd>:</kbd>、<kbd>[</kbd>、<kbd>]</kbd>用于输入常用拉丁、希腊、西里尔字母。
@@ -154,7 +154,7 @@
 - 其他/非标准或扩展IPA字母：
   <table>
     <tr align="center">
-      <td><br>g</td><td>er<br>ɚ</td><td>eR<br>ɝ</td><td>ll<br>ɫ</td><td>dJ<br>ȡ</td><td>tJ<br>ȶ</td><td>nJ<br>ȵ</td><td>lJ<br>ȴ</td><td>ir<br>ɿ</td><td>iR<br>ʅ</td><td>yr<br>ʮ</td><td>yR<br>ʯ</td><td>aA<br>ᴀ</td><td>eE<br>ᴇ</td><td>oO<br>ꭥ</td><td>iI<br>ɩ</td><td>ou<br>ɷ</td><td>oU<br>ω</td><td>bb<br>ȸ</td><td>pp<br>ȹ</td><td>iU<br>ᵻ</td><td>uY<br>ᵿ</td><td>p\<br>ƥ</td><td>t\<br>ƭ</td><td>c\<br>ƈ</td><td>k\<br>ƙ</td><td>q\<br>ʠ</td><td>t|<br>ʇ</td><td>c|<br>ʗ</td><td>k|<br>ʞ</td><td>eO<br>ⱻ</td><td>lS<br>ꞎ</td><td>yu<br>ɏ</td><td>rH<br>ɼ</td><td>ts<br>ʦ</td><td>dz<br>ʣ</td><td>tS<br>ʧ</td><td>dZ<br>ʤ</td><td>tc<br>ʨ</td><td>dj<br>ʥ</td><td>fn<br>ʩ</td><td>qq<br>ꞯ</td><td>ww<br>ʬ</td><td>dd<br>ʭ</td>
+      <td><br>g</td><td>er<br>ɚ</td><td>eR<br>ɝ</td><td>ll<br>ɫ</td><td>dJ<br>ȡ</td><td>tJ<br>ȶ</td><td>nJ<br>ȵ</td><td>lJ<br>ȴ</td><td>ir<br>ɿ</td><td>iR<br>ʅ</td><td>yr<br>ʮ</td><td>yR<br>ʯ</td><td>aA<br>ᴀ</td><td>eE<br>ᴇ</td><td>oO<br>ꭥ</td><td>eO<br>ⱻ</td><td>rH<br>ɼ</td><td>iI<br>ɩ</td><td>ou<br>ɷ</td><td>oU<br>ω</td><td>bb<br>ȸ</td><td>pp<br>ȹ</td><td>iU<br>ᵻ</td><td>uY<br>ᵿ</td><td>yu<br>ɏ</td><td>p\<br>ƥ</td><td>t\<br>ƭ</td><td>c\<br>ƈ</td><td>k\<br>ƙ</td><td>q\<br>ʠ</td><td>q|<br>ɋ</td><td>t|<br>ʇ</td><td>c|<br>ʗ</td><td>\/<br>ʖ</td><td>k|<br>ʞ</td><td>sS<br>ʆ</td><td>zZ<br>ʓ</td><td>ts<br>ʦ</td><td>dz<br>ʣ</td><td>tS<br>ʧ</td><td>dZ<br>ʤ</td><td>tc<br>ʨ</td><td>dj<br>ʥ</td><td>tR<br>ꭧ</td><td>dR<br>ꭦ</td><td>lS<br>ʪ</td><td>lZ<br>ʫ</td><td>lR<br>ꞎ</td><td>fn<br>ʩ</td><td>qq<br>ꞯ</td><td>ww<br>ʬ</td><td>dd<br>ʭ</td><td>\!<br>¡</td>
     </tr>
   </table>
 
